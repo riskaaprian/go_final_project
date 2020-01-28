@@ -1,0 +1,14 @@
+{{ define "Menuadmin" }}
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo">Beranda</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                   {{ if (eq .status "1")}}
+                      <li><a href="/listAdmin">Daftar Pengguna</a></li> 
+                    {{end}}
+                      <li><a href="/">Home</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                  </ul>
+                </div>
+        </nav>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "home" }}
+  {{ template "Header" }}
+    {{ template "Menuadmin"  }}
+
+
+    <div class="container">
+            <h1>selamat datang {{ .username }}</h1> 
+            <h3>{{ .message }}</h3> 
+            
+    </div>
+
+      {{ template "Footer" }}
+{{ end }}
